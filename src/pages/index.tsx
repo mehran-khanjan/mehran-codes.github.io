@@ -1,10 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
-import {Inter} from "next/font/google";
-import styles from "@/styles/Home.module.css";
 import Link from "next/link";
-
-const inter = Inter({subsets: ["latin"]});
 
 export default function Home() {
     return (
@@ -18,34 +13,25 @@ export default function Home() {
 
             <div className="row mt-3">
                 <div className="col-12">
-                    <h1>
+                    <h2>
+                        JavaScript Articles List
+                    </h2>
+                    <ul className="">
+                        <li className="mt-2">
+                            <Link href={'/javascript/introduction'}>
+                                Introduction to JavaScript
+                            </Link>
+                        </li>
+                    </ul>
+                    <h2>
                         Blockchain Development Articles List
-                    </h1>
+                    </h2>
                     <ul className="">
                         <li className="mt-2">
                             <Link href={'/blockchain/unit-test-smart-contract'}>
                                 Unit Testing for a smart contract
                             </Link>
                         </li>
-
-                        <li className="mt-2">
-                            <Link href={'/blockchain/unit-test-smart-contract'}>
-                                Unit Testing for a smart contract
-                            </Link>
-                        </li>
-
-                        <li className="mt-2">
-                            <Link href={'/blockchain/write-unit-test-code-for-a-contract'}>
-                                Unit Testing for a smart contract
-                            </Link>
-                        </li>
-
-                        <li className="mt-2">
-                            <Link href={'/blockchain/write-unit-test-code-for-a-contract'}>
-                                Unit Testing for a smart contract
-                            </Link>
-                        </li>
-
                     </ul>
                 </div>
             </div>
