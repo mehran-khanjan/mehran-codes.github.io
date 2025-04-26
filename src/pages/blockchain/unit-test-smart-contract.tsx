@@ -1,11 +1,6 @@
-import Head from 'next/head';
-
 export default function UnitTestSmartContract() {
     return (
         <>
-            <Head>
-                <title>How To Unit Test A Smart Contract | Mehran Codes</title>
-            </Head>
             <div className="row mt-3">
                 <div className="col-12">
                     <h1>How To Unit Test A Smart Contract</h1>
@@ -34,12 +29,15 @@ export default function UnitTestSmartContract() {
                         <li>Worker service: to listen to blockchain transactions</li>
                     </ul>
 
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium animi, blanditiis
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium animi, blanditiis
                         cupiditate, dicta eligendi eveniet impedit iusto natus nobis ratione repudiandae sapiente
-                        tempore veniam voluptas voluptate voluptatum! Facilis, suscipit!
-                    </p>
-
+                        tempore veniam voluptas voluptate voluptatum! Facilis, suscipit!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium animi, blanditiis
+                        cupiditate, dicta eligendi eveniet impedit iusto natus nobis ratione repudiandae sapiente
+                        tempore veniam voluptas voluptate voluptatum! Facilis, suscipit!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium animi, blanditiis
+                        cupiditate, dicta eligendi eveniet impedit iusto natus nobis ratione repudiandae sapiente
+                        tempore veniam voluptas voluptate voluptatum! Facilis, suscipit!</p>
                 </div>
             </div>
         </>
