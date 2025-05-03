@@ -14,7 +14,9 @@ export default function Home() {
             <div className="row mt-3">
                 <div className="col-12">
                     <h2>
-                        JavaScript Articles List
+                        <Link href={'/javascript'}>
+                            JavaScript
+                        </Link>
                     </h2>
                     <ul className="">
                         <li className="mt-2">
@@ -24,7 +26,7 @@ export default function Home() {
                         </li>
                     </ul>
                     <h2>
-                        Blockchain Development Articles List
+                        Blockchain
                     </h2>
                     <ul className="">
                         <li className="mt-2">
