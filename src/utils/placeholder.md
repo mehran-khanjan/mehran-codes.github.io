@@ -1,9 +1,8 @@
-# Introduction to JavaScript
+# Title
 
-```javascript
-console.log('file content', fileContent);
-```
 ---
+
+## Questions
 
 --- 
 
