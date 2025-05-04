@@ -27,7 +27,7 @@ const MarkdownRenderer: React.FC<PropsType> = ({title, mdxSource}) => {
     return (
         <React.Fragment>
             <Head>
-                <title> {title} | Mehran Codes</title>
+                <title>{`${title} | Mehran Codes`}</title>
             </Head>
 
             <div className={styles.wrapper}>

@@ -34,12 +34,6 @@ export default function UnitTestSmartContract() {
                         <li>Worker service: to listen to blockchain transactions</li>
                     </ul>
 
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium animi, blanditiis
-                        cupiditate, dicta eligendi eveniet impedit iusto natus nobis ratione repudiandae sapiente
-                        tempore veniam voluptas voluptate voluptatum! Facilis, suscipit!
-                    </p>
-
                 </div>
             </div>
         </>
