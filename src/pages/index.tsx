@@ -38,6 +38,11 @@ export default function Home() {
                             </Link>
                         </li>
                         <li className="mt-2">
+                            <Link href={'/javascript/closure'}>
+                                Closure
+                            </Link>
+                        </li>
+                        <li className="mt-2">
                             <Link href={'/javascript/testing'}>
                                 Testing
                             </Link>
