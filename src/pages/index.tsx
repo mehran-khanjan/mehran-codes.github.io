@@ -37,6 +37,11 @@ export default function Home() {
                                 Introduction to JavaScript
                             </Link>
                         </li>
+                        <li className="mt-2">
+                            <Link href={'/javascript/testing'}>
+                                Testing
+                            </Link>
+                        </li>
                     </ul>
 
                     <h2>
