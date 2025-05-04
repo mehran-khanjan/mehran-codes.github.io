@@ -5,6 +5,26 @@ console.log('file content', fileContent);
 ```
 ---
 
+--- 
+
+##### Q 1: a
+
+- A:
+- B:
+- C:
+- D:
+
+<details>
+  <summary><b>Answer</b></summary>
+
+#### Answer: D
+
+ABC
+
+</details>
+
+--- 
+
 lorem ipsum question one
 
 <details>
