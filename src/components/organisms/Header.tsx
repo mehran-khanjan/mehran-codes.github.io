@@ -20,7 +20,7 @@ export default function Header() {
         <>
             <nav className="navbar navbar-expand-sm navbar-dark bg-primary">
                 <div className="container-fluid">
-                    <Link href={'/about'} className="navbar-brand">Mehran Khanjan</Link>
+                    <Link href={'/'} className="navbar-brand">Mehran Khanjan</Link>
                     <button
                         type="button"
                         className="navbar-toggler"

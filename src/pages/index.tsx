@@ -14,6 +14,19 @@ export default function Home() {
             <div className="row mt-3">
                 <div className="col-12">
                     <h2>
+                        <Link href={'/dsa'}>
+                            DSA
+                        </Link>
+                    </h2>
+                    {/*<ul className="">*/}
+                    {/*    <li className="mt-2">*/}
+                    {/*        <Link href={'/dsa/introduction'}>*/}
+                    {/*            Introduction to DSA*/}
+                    {/*        </Link>*/}
+                    {/*    </li>*/}
+                    {/*</ul>*/}
+
+                    <h2>
                         <Link href={'/javascript'}>
                             JavaScript
                         </Link>
@@ -38,6 +51,19 @@ export default function Home() {
                             </Link>
                         </li>
                     </ul>
+
+                    <h2>
+                        <Link href={'/next'}>
+                            NextJS
+                        </Link>
+                    </h2>
+                    {/*<ul className="">*/}
+                    {/*    <li className="mt-2">*/}
+                    {/*        <Link href={'/next/introduction'}>*/}
+                    {/*            Introduction to Next*/}
+                    {/*        </Link>*/}
+                    {/*    </li>*/}
+                    {/*</ul>*/}
 
                     <h2>
                         Blockchain
