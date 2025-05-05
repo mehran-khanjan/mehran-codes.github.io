@@ -17,9 +17,9 @@ export const getMdxContent = async (filePath: string) => {
     const mdxSource = await serialize(fileContent, {
         mdxOptions: {
             remarkPlugins: [
-                remarkGfm,
-                remarkMath
-            ], // Parse LaTeX math
+                remarkGfm, // Github flavor markdown
+                remarkMath // Parse LaTeX math
+            ],
             rehypePlugins: [
                 [rehypeKatex], // Render math to HTML
                 [rehypeHighlight], // Syntax highlighting
