@@ -14,6 +14,19 @@ export default function Home() {
             <div className="row mt-3">
                 <div className="col-12">
                     <h2>
+                        <Link href={'/math'}>
+                            Math
+                        </Link>
+                    </h2>
+                    {/*<ul className="">*/}
+                    {/*    <li className="mt-2">*/}
+                    {/*        <Link href={'/javascript/introduction'}>*/}
+                    {/*            Introduction to JavaScript*/}
+                    {/*        </Link>*/}
+                    {/*    </li>*/}
+                    {/*</ul>*/}
+
+                    <h2>
                         <Link href={'/dsa'}>
                             DSA
                         </Link>
