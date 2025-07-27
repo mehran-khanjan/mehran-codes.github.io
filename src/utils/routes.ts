@@ -80,7 +80,7 @@ routes['blockchain'] = {
     url: `${routes.articles.url}/blockchain`
 }
 
-// Solana
+// Solana: BS (Blockchain Solana)
 routes['solana'] = {
     title: 'Solana',
     url: `${routes.blockchain.url}/solana`
@@ -90,18 +90,20 @@ routes['BSintroduction'] = {
     title: 'Introduction to Solana',
     url: `${routes.solana.url}/introduction`,
 }
-
+routes['BSBasic'] = {
+    title: 'Solana Basic',
+    url: `${routes.solana.url}/basic`,
+}
 routes['BSProgrammingModel'] = {
     title: 'Solana Programming Model',
     url: `${routes.solana.url}/programming-model`,
 }
-
 routes['BSHelloWorld'] = {
     title: 'Solana Hello World',
     url: `${routes.solana.url}/hello-world`,
 }
 
-// EVM
+// EVM: BE (Blockchain EVM)
 routes['evm'] = {
     title: 'EVM',
     url: `${routes.blockchain.url}/evm`

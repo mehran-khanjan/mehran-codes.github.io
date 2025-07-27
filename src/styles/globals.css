@@ -9,3 +9,14 @@
     margin-left: 0 !important; /* Remove auto margins */
     margin-right: auto !important;
 }
+
+/*code {*/
+/*    padding: 4px 4px;*/
+/*    background-color: #cccccc;*/
+/*    color: black;*/
+/*    border-radius: 5px;*/
+/*}*/
+
+pre code {
+    background-color: #f0f0f0 !important;
+}
