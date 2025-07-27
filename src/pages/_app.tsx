@@ -1,18 +1,26 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import type {AppProps} from "next/app";
 import '../styles/globals.css';
-import Header from "@/components/organisms/Header";
+import React from 'react';
+import type {AppProps} from "next/app";
+import {NextPage} from "next";
 
-export default function App({Component, pageProps}: AppProps) {
-    return (
+export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
+    getLayout?: (page: React.ReactElement) => React.ReactNode
+}
+
+type AppPropsWithLayout = AppProps & {
+    Component: NextPageWithLayout
+}
+
+const App = ({Component, pageProps}: AppPropsWithLayout) => {
+
+    const getLayout = Component.getLayout ?? ((page) => page)
+
+    return getLayout(
         <>
-            <Header/>
-
-            <div className="container-fluid ">
-
-                <Component {...pageProps} />
-
-            </div>
+            <Component {...pageProps} />
         </>
     );
 }
+
+export default App;
