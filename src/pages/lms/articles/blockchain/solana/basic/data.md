@@ -6,10 +6,10 @@
 
 In Solana, a network is referred to as a cluster. There are four types of clusters:
 
-1. Devnet Cluster: A public test network for developers to build and test applications. It is reset periodically, and users can obtain free tokens.
-2. Testnet Cluster: A public network that mimics the mainnet environment but is used for testing. It is more stable than Devnet and allows for testing with real-world conditions.
-3. Mainnet Cluster: The live Solana network where real transactions occur. It is fully operational and supports all applications and services.
-4. Localnet: A local instance of the Solana blockchain that can be run on a developer's machine. It allows for quick testing without needing to connect to public networks.
+1. **Devnet Cluster:** A public test network for developers to build and test applications. It is reset periodically, and users can obtain free tokens.
+2. **Testnet Cluster:** A public network that mimics the mainnet environment but is used for testing. It is more stable than Devnet and allows for testing with real-world conditions.
+3. **Mainnet Cluster:** The live Solana network where real transactions occur. It is fully operational and supports all applications and services.
+4. **Localnet:** A local instance of the Solana blockchain that can be run on a developer's machine. It allows for quick testing without needing to connect to public networks.
 
 ---
 
@@ -32,11 +32,11 @@ Commitment: confirmed
 ```
 
 Explanation:
-- Config File: The location of the Solana CLI configuration file.
-- RPC URL: The endpoint for connecting to the cluster.
-- WebSocket URL: The endpoint for WebSocket connections to the cluster.
-- Keypair Path: The path to the default wallet used by Solana tools for network interactions.
-- Commitment: The level of transaction confirmation (e.g., confirmed or finalized).
+- **Config File:** The location of the Solana CLI configuration file.
+- **RPC URL:** The endpoint for connecting to the cluster.
+- **WebSocket URL:** The endpoint for WebSocket connections to the cluster.
+- **Keypair Path:** The path to the default wallet used by Solana tools for network interactions.
+- **Commitment:** The level of transaction confirmation (e.g., confirmed or finalized).
 
 ---
 

@@ -10,8 +10,8 @@ import {inspect} from "util";
 const fakeData = [
     {title: routes.BSintroduction.title, url: routes.BSintroduction.url},
     {title: routes.BSBasic.title, url: routes.BSBasic.url},
-    // {title: routes.BSProgrammingModel.title, url: routes.BSProgrammingModel.url},
-    // {title: routes.BSHelloWorld.title, url: routes.BSHelloWorld.url},
+    {title: routes.BSProgrammingModel.title, url: routes.BSProgrammingModel.url},
+    {title: routes.BSHelloWorld.title, url: routes.BSHelloWorld.url},
     // {title: routes.BEintroduction.title, url: routes.BEintroduction.url},
 ]
 
