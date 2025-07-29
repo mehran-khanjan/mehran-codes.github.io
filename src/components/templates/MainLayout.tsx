@@ -2,6 +2,7 @@ import React, {ReactNode} from 'react';
 import Header from "@/components/organisms/Header";
 import Head from "next/head";
 import {emptySpace, siteDescription, siteMainTitle} from "@/utils/metadata";
+import Footer from "@/components/organisms/Footer";
 
 type PropsTypes = {
     title: string,
@@ -28,6 +29,8 @@ const MainLayout: React.FC<PropsTypes> = ({title, children}) => {
                 </div>
 
             </div>
+
+            <Footer/>
         </>
     )
 }

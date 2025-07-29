@@ -1,18 +1,19 @@
 import React from 'react';
-import Link from "next/link";
 import MainLayout from "@/components/templates/MainLayout";
 import {Route, routes} from "@/utils/routes";
 import {colors} from "@/utils/colors";
 import ArticleItem from "@/components/organisms/ArticleItem";
-import {v4 as uuid} from 'uuid';
-import {inspect} from "util";
 
-const fakeData = [
+const fakeData1 = [
     {title: routes.BSintroduction.title, url: routes.BSintroduction.url},
     {title: routes.BSBasic.title, url: routes.BSBasic.url},
     {title: routes.BSProgrammingModel.title, url: routes.BSProgrammingModel.url},
     {title: routes.BSHelloWorld.title, url: routes.BSHelloWorld.url},
     // {title: routes.BEintroduction.title, url: routes.BEintroduction.url},
+]
+
+const fakeData2 = [
+    {title: routes.Ruintroduction.title, url: routes.Ruintroduction.url},
 ]
 
 const Home = () => {
@@ -25,9 +26,17 @@ const Home = () => {
                 <hr/>
 
                 <ArticleItem
-                    key={uuid()}
-                    items={fakeData}
+                    title={'Blockchain'}
+                    items={fakeData1}
                     color={colors.green}
+                    isMultiSection={true}
+                />
+
+                <ArticleItem
+                    title={'Rust'}
+                    items={fakeData2}
+                    color={colors.red}
+                    isMultiSection={false}
                 />
 
 

@@ -75,6 +75,8 @@ routes['articles'] = {
     title: 'Articles',
     url: `${routes.lms.url}/articles`
 }
+
+// Blockchain
 routes['blockchain'] = {
     title: 'Blockchain',
     url: `${routes.articles.url}/blockchain`
@@ -111,4 +113,15 @@ routes['evm'] = {
 routes['BEintroduction'] = {
     title: 'Introduction to EVM',
     url: `${routes.evm.url}/introduction`,
+}
+
+// Rust
+routes['rust'] = {
+    title: 'Rust',
+    url: `${routes.articles.url}/rust`
+}
+
+routes['Ruintroduction'] = {
+    title: 'Introduction to Rust',
+    url: `${routes.rust.url}/introduction`,
 }
