@@ -6,11 +6,13 @@ import {v4 as uuid} from 'uuid';
 import {forEach} from "react-bootstrap/ElementChildren";
 
 type PropsType = {
+    title: string,
     items: any,
     color: string,
+    isMultiSection: boolean,
 }
 
-const ArticleItem: React.FC<PropsType> = ({items, color}) => {
+const ArticleItem: React.FC<PropsType> = ({title, items, color, isMultiSection}) => {
     if (items.length === 0) {
         return (
             <div>Add some items</div>
@@ -23,14 +25,16 @@ const ArticleItem: React.FC<PropsType> = ({items, color}) => {
                 <div className="col-12">
                     <div className="px-2 py-2 rounded" style={{backgroundColor: colors.gray}}>
                         <h2 className="">
-                            Blockchain
+                            {title}
                         </h2>
 
                         <hr/>
 
-                        <h3 className="">
-                            Solana
-                        </h3>
+                        {isMultiSection &&
+                            <h3 className="">
+                                Solana
+                            </h3>
+                        }
 
                         <div className="row">
 
