@@ -125,3 +125,24 @@ routes['Ruintroduction'] = {
     title: 'Introduction to Rust',
     url: `${routes.rust.url}/introduction`,
 }
+
+// React
+routes['react'] = {
+    title: 'React',
+    url: `${routes.articles.url}/react`
+}
+
+routes['Reintroduction'] = {
+    title: 'Introduction to React',
+    url: `${routes.react.url}/introduction`,
+}
+
+routes['Recomponents'] = {
+    title: 'React Components',
+    url: `${routes.react.url}/components`,
+}
+
+routes['Rehooks'] = {
+    title: 'React Hooks',
+    url: `${routes.react.url}/hooks`,
+}

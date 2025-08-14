@@ -1,7 +1,7 @@
 import React from 'react';
 import MarkdownRenderer from "@/components/organisms/MarkdownRenderer/MarkdownRenderer";
-import {getMdxContent} from "@/utils/mdxUtils";
 import path from "path";
+import {getMdxContent} from "@/utils/mdxUtils";
 import MainLayout from "@/components/templates/MainLayout";
 import {routes} from "@/utils/routes";
 
@@ -13,7 +13,7 @@ export async function getStaticProps() {
         'lms',
         'articles',
         'react',
-        'introduction',
+        'hooks',
         'data.md'
     );
     const {fileContent, mdxSource} = await getMdxContent(postPath);
@@ -23,29 +23,25 @@ export async function getStaticProps() {
 type PropsType = {
     title: string,
     // fileContent: string,
-    mdxSource: any,
+    mdxSource: any
 }
 
-type ReactIntroductionType = React.FC<PropsType> & {
+type ReactHooksType = React.FC<PropsType> & {
     getLayout?: (page: React.ReactElement) => React.ReactNode;
 };
 
-const ReactIntroduction: ReactIntroductionType = ({mdxSource}) => {
+const ReactHooks: ReactHooksType = ({mdxSource}) => {
     return (
-        <React.Fragment>
-
-            <MarkdownRenderer mdxSource={mdxSource}/>
-
-        </React.Fragment>
+        <MarkdownRenderer mdxSource={mdxSource}/>
     )
 }
 
-ReactIntroduction.getLayout = function getLayout(page: React.ReactElement) {
+ReactHooks.getLayout = function getLayout(page: React.ReactElement) {
     return (
-        <MainLayout title={routes.Reintroduction.title}>
+        <MainLayout title={routes.Rehooks.title}>
             {page}
         </MainLayout>
     )
 }
 
-export default ReactIntroduction;
+export default ReactHooks;
