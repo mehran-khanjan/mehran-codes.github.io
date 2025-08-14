@@ -16,6 +16,11 @@ const fakeData2 = [
     {title: routes.Ruintroduction.title, url: routes.Ruintroduction.url},
 ]
 
+const fakeData3 = [
+    {title: routes.Reintroduction.title, url: routes.Reintroduction.url},
+    // {title: routes.Recomponents.title, url: routes.Recomponents.url},
+]
+
 const Home = () => {
     return (
         <>
@@ -36,6 +41,13 @@ const Home = () => {
                     title={'Rust'}
                     items={fakeData2}
                     color={colors.red}
+                    isMultiSection={false}
+                />
+
+                <ArticleItem
+                    title={'React'}
+                    items={fakeData3}
+                    color={colors.orange}
                     isMultiSection={false}
                 />
 
