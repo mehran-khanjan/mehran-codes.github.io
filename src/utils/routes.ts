@@ -76,6 +76,17 @@ routes['articles'] = {
     url: `${routes.lms.url}/articles`
 }
 
+// JavaScript
+routes['javascript'] = {
+    title: 'JavaScript',
+    url: `${routes.articles.url}/javascript`
+}
+
+routes['JSSerialization'] = {
+    title: 'Serialization and Deserialization in JS',
+    url: `${routes.javascript.url}/serialization`,
+}
+
 // Blockchain
 routes['blockchain'] = {
     title: 'Blockchain',

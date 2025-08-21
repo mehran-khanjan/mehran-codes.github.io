@@ -4,6 +4,10 @@ import {Route, routes} from "@/utils/routes";
 import {colors} from "@/utils/colors";
 import ArticleItem from "@/components/organisms/ArticleItem";
 
+const fakeData0 = [
+    {title: routes.JSSerialization.title, url: routes.JSSerialization.url},
+]
+
 const fakeData1 = [
     {title: routes.BSintroduction.title, url: routes.BSintroduction.url},
     {title: routes.BSBasic.title, url: routes.BSBasic.url},
@@ -31,9 +35,16 @@ const Home = () => {
                 <hr/>
 
                 <ArticleItem
+                    title={'JavaScript'}
+                    items={fakeData0}
+                    color={colors.green}
+                    isMultiSection={false}
+                />
+
+                <ArticleItem
                     title={'Blockchain'}
                     items={fakeData1}
-                    color={colors.green}
+                    color={colors.blue}
                     isMultiSection={true}
                 />
 

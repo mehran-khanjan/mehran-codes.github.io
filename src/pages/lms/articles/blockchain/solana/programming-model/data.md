@@ -29,6 +29,35 @@ System Program (parent) (type of program account)
 program account (child) - storage account - token account
 ```
 
+## Accounts Communication On-Chain
+
+On Solana, the program account, the storage account and the token account are 
+completely separate on–chain entities, so you need a defined way to pass data back 
+and forth. 
+
+How do these entities connect to each other in a transaction?
+1. The client (JS/TS) builds an instruction specifying:
+   - The program’s public key (so Solana knows which code to run).
+   - A list of accounts (including your storage account).
+   - Any serialized instruction data (e.g. the u64 for set).
+2. Solana loads your program account’s code, plus the raw byte buffers of each 
+listed account.
+3. Anchor’s generated entrypoint:
+   - Deserializes each account buffer into the structs you declared in your `Context<…>`.
+   - Calls your handler function (`initialize`, `increase`, etc.).
+   - Serializes any modified structs back into the raw account buffers.
+4. Modified bytes persist in the storage account’s data field.
+
+```bash
+program account             storage account
+(address123)                (address456)
+       ||                          ||
+       ||                          ||
+       ||                          ||
+  Communication with serialization and deserialization.
+  DApp needs to know both address for both accounts.
+```
+
 ---
 
 ## Rent
@@ -50,12 +79,12 @@ If we want to create an account holding 32 bytes of data, we can calculate the r
 this command:
 
 ```bash
-solana rent 32
+solana rent 64
 
 # Output
-# Rent per byte-year: 0.00000348 SOL
-# Rent per epoch: 0.000003048 SOL
-# Rent-exempt minimum: 0.0011136 SOL
+# Rent per byte-year: 0.00000689 SOL
+# Rent per epoch: 0.000003158 SOL
+# Rent-exempt minimum: 0.0042158 SOL
 ```
 
 To be rent-exempt, you need to pay at least 0.0011136 SOL.
