@@ -373,8 +373,6 @@ const element = /*#__PURE__*/ React.createElement('div', null, 'Hello, World!');
 
 ## Questions
 
---- 
-
 ##### Q 1: What is the primary purpose of the virtual DOM in React?
 
 - A: To replace the real DOM entirely for faster rendering
