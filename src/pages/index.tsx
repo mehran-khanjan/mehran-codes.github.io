@@ -13,7 +13,8 @@ const fakeData1 = [
     {title: routes.BSBasic.title, url: routes.BSBasic.url},
     {title: routes.BSProgrammingModel.title, url: routes.BSProgrammingModel.url},
     {title: routes.BSHelloWorld.title, url: routes.BSHelloWorld.url},
-    // {title: routes.BEintroduction.title, url: routes.BEintroduction.url},
+    {title: routes.BSPDA.title, url: routes.BSPDA.url},
+    {title: routes.BSHelloWorldFrontEnd.title, url: routes.BSHelloWorldFrontEnd.url},
 ]
 
 const fakeData2 = [

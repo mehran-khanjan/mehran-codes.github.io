@@ -4,27 +4,15 @@
 
 ## Solana Blockchain
 
-The Solana network is a third-generation, high-performance, permissionless blockchain 
-and an open-source project maintained by the Solana Foundation. Anatoly Yakovenko 
-published the Solana whitepaper in November 2017, and the first block was created 
-in 2020. The network can process over 50,000 transactions per second (TPS) with an 
-average transaction cost of $0.00025. This efficiency results from a unique 
-combination of Proof of Stake (PoS) and Proof of History (PoH) consensus 
-mechanisms.
+The Solana network is a third-generation, high-performance, permissionless blockchain and an open-source project maintained by the Solana Foundation. Anatoly Yakovenko published the Solana whitepaper in November 2017, and the first block was created in 2020. The network can process over 50,000 transactions per second (TPS) with an average transaction cost of $0.00025. This efficiency results from a unique combination of Proof of Stake (PoS) and Proof of History (PoH) consensus mechanisms.
 
 ---
 
 ## Solana and Anchor
 
-Unlike Ethereum Virtual Machine (EVM)-based blockchains using Solidity, Solana 
-requires developers to handle low-level operations such as memory management 
-and pointers. This contributes to Solana’s high performance but increases development 
-complexity.
+Unlike Ethereum Virtual Machine (EVM)-based blockchains using Solidity, Solana requires developers to handle low-level operations such as memory management and pointers. This contributes to Solana’s high performance but increases development complexity.
 
-The Anchor Framework simplifies Solana smart contract development by abstracting 
-these low-level complexities, allowing developers to focus on business logic. Anchor 
-streamlines the creation of secure and efficient smart contracts for the Solana 
-blockchain.
+The Anchor Framework simplifies Solana smart contract development by abstracting these low-level complexities, allowing developers to focus on business logic. Anchor streamlines the creation of secure and efficient smart contracts for the Solana blockchain.
 
 ---
 
@@ -37,6 +25,7 @@ To develop smart contracts for the Solana blockchain, you need the following too
 3. The Solana Tool Suite
 4. Anchor Framework
 5. Phantom Wallet
+6. Solana Playground (Optional)
 
 **1. The Rust Programming Language**
 
@@ -94,4 +83,8 @@ avm --version
 **5. Phantom Wallet**
 
 Install the Phantom Wallet browser extension from [phantom.app](https://phantom.com).
+
+**6. Solana Playground**
+
+To dive into Solana development with minimal setup, [Solana Playground](https://beta.solpg.io/) is an excellent starting point. This web-based IDE allows you to write, compile, and deploy Solana programs (smart contracts) without complex local installations. While it doesn't provide access to full project files, its simplicity and browser-based environment make it ideal for beginners and rapid prototyping.
 
