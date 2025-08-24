@@ -19,6 +19,7 @@ const fakeData1 = [
 
 const fakeData2 = [
     {title: routes.Ruintroduction.title, url: routes.Ruintroduction.url},
+    {title: routes.RuDataTypes.title, url: routes.RuDataTypes.url},
 ]
 
 const fakeData3 = [

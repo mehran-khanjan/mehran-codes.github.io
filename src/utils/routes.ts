@@ -145,6 +145,11 @@ routes['Ruintroduction'] = {
     url: `${routes.rust.url}/introduction`,
 }
 
+routes['RuDataTypes'] = {
+    title: 'Rust Variable and Data Types',
+    url: `${routes.rust.url}/types-variables`,
+}
+
 // React
 routes['react'] = {
     title: 'React',
