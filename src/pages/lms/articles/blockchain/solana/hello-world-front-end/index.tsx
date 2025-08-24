@@ -14,7 +14,7 @@ export async function getStaticProps() {
         'articles',
         'blockchain',
         'solana',
-        'hello-world',
+        'hello-world-front-end',
         'data.md'
     );
     const {fileContent, mdxSource} = await getMdxContent(postPath);
@@ -27,22 +27,22 @@ type PropsType = {
     mdxSource: any
 }
 
-type BSHelloWorldType = React.FC<PropsType> & {
+type BSHelloWorldFrontEndType = React.FC<PropsType> & {
     getLayout?: (page: React.ReactElement) => React.ReactNode;
 };
 
-const BSHelloWorld: BSHelloWorldType = ({mdxSource}) => {
+const BSHelloWorldFrontEnd: BSHelloWorldFrontEndType = ({mdxSource}) => {
     return (
         <MarkdownRenderer mdxSource={mdxSource}/>
     )
 }
 
-BSHelloWorld.getLayout = function getLayout(page: React.ReactElement) {
+BSHelloWorldFrontEnd.getLayout = function getLayout(page: React.ReactElement) {
     return (
-        <MainLayout title={routes.BSHelloWorld.title}>
+        <MainLayout title={routes.BSHelloWorldFrontEnd.title}>
             {page}
         </MainLayout>
     )
 }
 
-export default BSHelloWorld;
+export default BSHelloWorldFrontEnd;

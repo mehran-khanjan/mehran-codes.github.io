@@ -115,6 +115,14 @@ routes['BSHelloWorld'] = {
     title: 'Solana Hello World',
     url: `${routes.solana.url}/hello-world`,
 }
+routes['BSPDA'] = {
+    title: 'Solana PDA',
+    url: `${routes.solana.url}/pda`,
+}
+routes['BSHelloWorldFrontEnd'] = {
+    title: 'Front-End for Solana Hello World',
+    url: `${routes.solana.url}/hello-world-front-end`,
+}
 
 // EVM: BE (Blockchain EVM)
 routes['evm'] = {

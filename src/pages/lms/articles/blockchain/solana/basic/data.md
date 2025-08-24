@@ -125,6 +125,11 @@ solana airdrop 1 $(solana address -k ./publickey-file.json)
 
 The command returns a transaction signature, which can be verified on Solana Explorer.
 
+**Web-based Faucets:**
+- [Solana Faucet](https://faucet.solana.com/)
+- [SOL Faucet](https://solfaucet.com)
+- [QuickNode Faucet](https://faucet.quicknode.com/solana/devnet)
+
 ---
 
 ## Transfer
