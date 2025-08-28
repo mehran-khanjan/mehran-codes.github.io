@@ -27,6 +27,11 @@ const fakeData3 = [
     // {title: routes.Recomponents.title, url: routes.Recomponents.url},
 ]
 
+const fakeData4 = [
+    {title: routes.LxIntroduction.title, url: routes.LxIntroduction.url},
+    {title: routes.LxCLI.title, url: routes.LxCLI.url},
+]
+
 const Home = () => {
     return (
         <>
@@ -61,6 +66,13 @@ const Home = () => {
                     title={'React'}
                     items={fakeData3}
                     color={colors.orange}
+                    isMultiSection={false}
+                />
+
+                <ArticleItem
+                    title={'Linux'}
+                    items={fakeData4}
+                    color={colors.green}
                     isMultiSection={false}
                 />
 

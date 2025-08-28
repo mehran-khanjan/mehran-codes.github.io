@@ -170,3 +170,19 @@ routes['Rehooks'] = {
     title: 'React Hooks',
     url: `${routes.react.url}/hooks`,
 }
+
+// Linux
+routes['linux'] = {
+    title: 'Linux',
+    url: `${routes.articles.url}/linux`
+}
+
+routes['LxIntroduction'] = {
+    title: 'Introduction to Linux',
+    url: `${routes.linux.url}/introduction`,
+}
+
+routes['LxCLI'] = {
+    title: 'Linux CLI',
+    url: `${routes.linux.url}/cli`,
+}
